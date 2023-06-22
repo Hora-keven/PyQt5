@@ -33,15 +33,50 @@ class Ui_second(object):
         self.label_2.setStyleSheet("font-size: 18px;")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(110, 270, 671, 171))
+        self.label_3.setGeometry(QtCore.QRect(110, 240, 671, 171))
         self.label_3.setStyleSheet("font-size: 18px;")
         self.label_3.setObjectName("label_3")
-        self.backfirst = QtWidgets.QPushButton(self.centralwidget)
-        self.backfirst.setGeometry(QtCore.QRect(305, 670, 211, 21))
-        self.backfirst.setStyleSheet("padding:25px;\n"
+        self.first_error = QtWidgets.QPushButton(self.centralwidget)
+        self.first_error.setGeometry(QtCore.QRect(260, 430, 31, 21))
+        self.first_error.setStyleSheet("padding:25px;\n"
 "font-size:15px;\n"
 "background-color:#B1B175;")
-        self.backfirst.setObjectName("backfirst")
+        self.first_error.setObjectName("first_error")
+        self.answer_correct = QtWidgets.QPushButton(self.centralwidget)
+        self.answer_correct.setGeometry(QtCore.QRect(400, 430, 31, 21))
+        self.answer_correct.setStyleSheet("padding:25px;\n"
+"font-size:15px;\n"
+"background-color:#B1B175;")
+        self.answer_correct.setObjectName("answer_correct")
+        self.second_error = QtWidgets.QPushButton(self.centralwidget)
+        self.second_error.setGeometry(QtCore.QRect(330, 430, 31, 21))
+        self.second_error.setStyleSheet("padding:25px;\n"
+"font-size:15px;\n"
+"background-color:#B1B175;")
+        self.second_error.setObjectName("second_error")
+        self.third_error = QtWidgets.QPushButton(self.centralwidget)
+        self.third_error.setGeometry(QtCore.QRect(470, 430, 31, 21))
+        self.third_error.setStyleSheet("padding:25px;\n"
+"font-size:15px;\n"
+"background-color:#B1B175;")
+        self.third_error.setObjectName("third_error")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(270, 360, 251, 51))
+        self.label_4.setStyleSheet("font-size:20px;\n"
+"")
+        self.label_4.setObjectName("label_4")
+        self.correct_or_error = QtWidgets.QLabel(self.centralwidget)
+        self.correct_or_error.setGeometry(QtCore.QRect(260, 660, 341, 51))
+        self.correct_or_error.setStyleSheet("font-size:20px;\n"
+"")
+        self.correct_or_error.setText("")
+        self.correct_or_error.setWordWrap(True)
+        self.correct_or_error.setObjectName("correct_or_error")
+        self.back_tofirst = QtWidgets.QPushButton(self.centralwidget)
+        self.back_tofirst.setGeometry(QtCore.QRect(320, 740, 191, 31))
+        self.back_tofirst.setStyleSheet("font-size:15px;\n"
+"background-color:#B1AF74;")
+        self.back_tofirst.setObjectName("back_tofirst")
         second.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(second)
@@ -50,15 +85,19 @@ class Ui_second(object):
     def retranslateUi(self, second):
         _translate = QtCore.QCoreApplication.translate
         second.setWindowTitle(_translate("second", "MainWindow"))
-        self.label_2.setText(_translate("second", "reason fast, according to the result find the next object. \n"
+        self.label_2.setText(_translate("second", "Raciocinio lógico, de acordo com o resultado, encontre o próximo objeto. \n"
 "26, 29, 33, 36, 40 \n"
-"What´s the next number? \n"
-"1, 54, 43, 50"))
+""))
         self.label_3.setText(_translate("second", "\n"
-"in this reason fast there are two patterns, what is the second pattern?\n"
-"Is an integer value. After thinking, look for the object with that amount."))
-        self.backfirst.setText(_translate("second", "Back to first screen"))
-
+"nesse raciocnio lógico existem dois padrões, qual é o segundo padrão?\n"
+"É um valor inteiro. Depois de pensar, procure o objeto com essa quantia.\n"
+""))
+        self.first_error.setText(_translate("second", "20"))
+        self.answer_correct.setText(_translate("second", "4"))
+        self.second_error.setText(_translate("second", "2"))
+        self.third_error.setText(_translate("second", "5"))
+        self.label_4.setText(_translate("second", "Qual o segundo padrão?"))
+        self.back_tofirst.setText(_translate("second", "Volte para a primeira página"))
 
 
 if __name__ == "__main__":

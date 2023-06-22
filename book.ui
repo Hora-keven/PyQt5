@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>book_screen</class>
+ <widget class="QMainWindow" name="book_screen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="dic_character">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>190</y>
+      <width>231</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:20px;
+</string>
+    </property>
+    <property name="text">
+     <string>
+
+existe um filme conhecido por todos onde tem um personagem que diz: &quot;espelho espelho meu existe alguem mais bonito que eu?&quot; 
+
+
+que objeto está relacionado a este filme?
+Guarde essa letra: U</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>821</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>livro.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_tofirst">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>670</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;
+background-color:#B1AF74;</string>
+    </property>
+    <property name="text">
+     <string>Volte para a primeira página</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>dic_character</zorder>
+   <zorder>back_tofirst</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

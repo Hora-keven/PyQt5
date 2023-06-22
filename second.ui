@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>second</class>
+ <widget class="QMainWindow" name="second">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>imgs/1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>150</y>
+      <width>771</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Raciocinio lógico, de acordo com o resultado, encontre o próximo objeto. 
+26, 29, 33, 36, 40 
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>240</y>
+      <width>671</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>
+nesse raciocnio lógico existem dois padrões, qual é o segundo padrão?
+É um valor inteiro. Depois de pensar, procure o objeto com essa quantia.
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="first_error">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>430</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:25px;
+font-size:15px;
+background-color:#B1B175;</string>
+    </property>
+    <property name="text">
+     <string>20</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="answer_correct">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>430</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:25px;
+font-size:15px;
+background-color:#B1B175;</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="second_error">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>430</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:25px;
+font-size:15px;
+background-color:#B1B175;</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="third_error">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>430</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:25px;
+font-size:15px;
+background-color:#B1B175;</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>360</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:20px;
+</string>
+    </property>
+    <property name="text">
+     <string>Qual o segundo padrão?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="correct_or_error">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>660</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:20px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_tofirst">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>740</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;
+background-color:#B1AF74;</string>
+    </property>
+    <property name="text">
+     <string>Volte para a primeira página</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs/imag.qrc"/>
+ </resources>
+ <connections/>
+</ui>
