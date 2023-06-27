@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>verifica.png</pixmap>
+     <pixmap>imgs/verifica.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

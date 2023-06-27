@@ -100,6 +100,7 @@ class Ui_second(object):
         self.back_tofirst.setText(_translate("second", "Volte para a primeira página"))
 
 
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)

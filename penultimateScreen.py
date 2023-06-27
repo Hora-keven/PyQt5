@@ -22,7 +22,7 @@ class Ui_verification(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(-10, 0, 811, 801))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("verifica.png"))
+        self.label.setPixmap(QtGui.QPixmap("imgs/verifica.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.iinput_usuario = QtWidgets.QLineEdit(self.centralwidget)

@@ -23,7 +23,7 @@ class Ui_key(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(200, 80, 381, 421))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("chave.png"))
+        self.label.setPixmap(QtGui.QPixmap("imgs/chave.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)

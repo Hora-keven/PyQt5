@@ -12,6 +12,8 @@ from penultimateScreen import Ui_verification
 from final import Ui_outhome
 from maçaneta import Ui_key
 from error import Ui_erro
+from table_tip import Ui_table_tip
+from play_error import Ui_play_error
 from threading import *
 import pygame
 import time
@@ -36,8 +38,9 @@ class First(Ui_MainWindow):
         self.noright.clicked.connect(self.clik_error)
         self.noright_2.clicked.connect(self.clik_error)
 
+        self.table.clicked.connect(self.clik_error)
     def clik_error(self):
-        screen_error.show()
+        error_play.show()
         musics.thread_error()
       
     def second_tip(self):
@@ -55,6 +58,7 @@ class First(Ui_MainWindow):
     def third_tip(self):
         self.book.setHidden(True)
         second.close()
+        window.close()
         book_screen.show()
         self.mirror_tip.setHidden(False)
         musics.thread_book()
@@ -62,19 +66,21 @@ class First(Ui_MainWindow):
     def fourth_tip(self):
         self.mirror_tip.setHidden(True)
         book_screen.close()
-        self.lastpag.setHidden(False)
         window.close()
         mirror_screen.show()
-        
+
     def last_tip(self):
         self.lastpag.setHidden(True)
         musics.thread_idea()
         mirror_screen.close()
-        self.keys_win.setHidden(False)
+        window.close()
+        self.keys_win.setHidden(True)
+        self.lastpag.setHidden(False)
         penultimate_screen.show()
         
     def key(self):
         self.keys_win.setHidden(True)
+
         penultimate_screen.close()
         self.out.setHidden(False)
         window.close()
@@ -121,11 +127,11 @@ class Screen_Book(Ui_book_screen):
     def __init__(self, book_screen):
         self.setupUi(book_screen)
         self.back_tofirst.clicked.connect(self.back_topage)
-        
+
     def back_topage(self):
         book_screen.close()   
         window.show()
-        
+
 class Screen_mirror(Ui_mirror):
     def __init__(self, screen_mirror) -> None:
         self.setupUi(screen_mirror)
@@ -189,7 +195,17 @@ class Error(Ui_erro):
     def back(self):
         screen_error.close()
         second.show()
-        
+
+
+class Play_error(Ui_play_error):
+    def __init__(self, play_erro):
+        self.setupUi(play_erro)
+        self.back_topage.clicked.connect(self.back_page)
+
+    def back_page(self):
+        error_play.close()
+        window.show()
+
              
 if __name__ == "__main__":
     import sys
@@ -221,6 +237,9 @@ if __name__ == "__main__":
     
     screen_error = QtWidgets.QMainWindow()
     error_screen = Error(screen_error)
+
+    error_play = QtWidgets.QMainWindow()
+    play_error = Play_error(error_play)
 
     sys.exit(app.exec_())
 

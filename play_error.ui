@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>shine</class>
- <widget class="QMainWindow" name="shine">
+ <class>play_error</class>
+ <widget class="QMainWindow" name="play_error">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -25,50 +25,52 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-60</x>
-      <y>0</y>
-      <width>861</width>
-      <height>801</height>
+      <x>220</x>
+      <y>100</y>
+      <width>341</width>
+      <height>361</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>imgs/luz.png</pixmap>
+     <pixmap>imgs/erro.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="dic_letter">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>450</y>
-      <width>781</width>
-      <height>171</height>
+      <x>310</x>
+      <y>80</y>
+      <width>211</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size: 18px;</string>
+     <string notr="true">font-size:20px;</string>
     </property>
     <property name="text">
-     <string>A última letra é: S. Clique na luz e advinhe onde está a chave.
-Formando a palavra com as letras guardadas.</string>
+     <string>Para voltar clique no X</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="proximapag">
+   <widget class="QPushButton" name="back_topage">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>20</y>
-      <width>361</width>
-      <height>341</height>
+      <x>270</x>
+      <y>190</y>
+      <width>281</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="text">

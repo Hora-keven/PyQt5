@@ -22,7 +22,7 @@ class Ui_shine(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(-60, 0, 861, 801))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("luz.png"))
+        self.label.setPixmap(QtGui.QPixmap("imgs/luz.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.dic_letter = QtWidgets.QLabel(self.centralwidget)

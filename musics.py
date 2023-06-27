@@ -5,7 +5,7 @@ from threading import Thread
 def music_computer():
     pygame.mixer.init()
     pygame.init()
-    pygame.mixer.music.load('computer.mp3')
+    pygame.mixer.music.load('musicas/computer.mp3')
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()        
@@ -17,7 +17,7 @@ def thread_computer():
 def music_book():
     pygame.mixer.init()
     pygame.init()
-    pygame.mixer.music.load('livro_musica.mp3')
+    pygame.mixer.music.load('musicas/livro_musica.mp3')
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()
@@ -30,7 +30,7 @@ def thread_book():
 def music_error():
     pygame.mixer.init()
     pygame.init()
-    pygame.mixer.music.load('Som de erro.mp3')
+    pygame.mixer.music.load('musicas/Som de erro.mp3')
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()
@@ -42,7 +42,7 @@ def thread_error():
 def music_rigth():
     pygame.mixer.init()
     pygame.init()
-    pygame.mixer.music.load('Som de resposta certa.mp3')
+    pygame.mixer.music.load('musicas/Som de resposta certa.mp3')
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()
@@ -54,7 +54,7 @@ def thread_right():
 def music_playground():
     pygame.mixer.init()
     pygame.init()
-    pygame.mixer.music.load('criancas2.mp3')
+    pygame.mixer.music.load('musicas/criancas2.mp3')
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()
@@ -68,7 +68,7 @@ def user_write():
     time.sleep(1)
     pygame.mixer.init()
     pygame.init()
-    pygame.mixer.music.load('computer.mp3')
+    pygame.mixer.music.load('musicas/computer.mp3')
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()
@@ -79,7 +79,7 @@ def thread_user():
 
 def music_idea():
     pygame.mixer.init()
-    pygame.mixer_music.load("ideia.mp3")
+    pygame.mixer_music.load("musicas/ideia.mp3")
     pygame.mixer.music.play()
     time.sleep(5)
     pygame.mixer.music.stop()
