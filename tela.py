@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         self.label_2.setMinimumSize(QtCore.QSize(800, 700))
         self.label_2.setMaximumSize(QtCore.QSize(800, 700))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("fundo.png"))
+        self.label_2.setPixmap(QtGui.QPixmap("imgs/fundo.png"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
         self.book = QtWidgets.QPushButton(self.centralwidget)
@@ -116,6 +116,11 @@ class Ui_MainWindow(object):
         self.noright_2.setText("")
         self.noright_2.setFlat(True)
         self.noright_2.setObjectName("noright_2")
+        self.table = QtWidgets.QPushButton(self.centralwidget)
+        self.table.setGeometry(QtCore.QRect(660, 380, 141, 71))
+        self.table.setText("")
+        self.table.setFlat(True)
+        self.table.setObjectName("table")
         self.label_2.raise_()
         self.label.raise_()
         self.lbprincipal.raise_()
@@ -131,6 +136,7 @@ class Ui_MainWindow(object):
         self.error.raise_()
         self.noright.raise_()
         self.noright_2.raise_()
+        self.table.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -141,6 +147,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "teste"))
         self.lbprincipal.setText(_translate("MainWindow", "Scape room"))
         self.start.setText(_translate("MainWindow", "Inicio"))
+
 
 
 if __name__ == "__main__":
