@@ -144,7 +144,7 @@ text-align: center;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>fundo.png</pixmap>
+     <pixmap>imgs/fundo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -319,6 +319,22 @@ text-align: center;</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="table">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>380</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>lbprincipal</zorder>
@@ -334,6 +350,7 @@ text-align: center;</string>
    <zorder>error</zorder>
    <zorder>noright</zorder>
    <zorder>noright_2</zorder>
+   <zorder>table</zorder>
   </widget>
  </widget>
  <resources>
