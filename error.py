@@ -22,7 +22,7 @@ class Ui_erro(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, -10, 801, 841))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("erro.png"))
+        self.label.setPixmap(QtGui.QPixmap("imgs/erro.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.back_button = QtWidgets.QPushButton(self.centralwidget)

@@ -74,7 +74,7 @@ Guarde essa letra: U</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>livro.png</pixmap>
+     <pixmap>imgs/livro.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

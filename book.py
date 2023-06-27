@@ -34,7 +34,7 @@ class Ui_book_screen(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(-20, 0, 821, 801))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("livro.png"))
+        self.label.setPixmap(QtGui.QPixmap("imgs/livro.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.back_tofirst = QtWidgets.QPushButton(self.centralwidget)

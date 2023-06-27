@@ -24,7 +24,7 @@ class Ui_outhome(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, 240, 801, 431))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("1896 1.png"))
+        self.label.setPixmap(QtGui.QPixmap("imgs/1896 1.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
