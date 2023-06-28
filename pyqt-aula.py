@@ -23,12 +23,8 @@ import musics
 class First(Ui_MainWindow):
     def __init__(self, MainWindow) -> None:
         self.setupUi(MainWindow)
+        self.desative()
         self.start.clicked.connect(self.start_dic)
-    
-    def start_dic(self):
-        self.first_dic.setText("  Bem-vindo ao jogo! Scape room. A primeira dica é: o que na sala tem a ver com Alan Turing? guarde essa letra: H")
-        
-        self.computer.setEnabled(True)
         self.computer.clicked.connect(self.second_tip)
         self.book.clicked.connect(self.third_tip)
         self.mirror_tip.clicked.connect(self.fourth_tip)
@@ -37,20 +33,31 @@ class First(Ui_MainWindow):
         self.out.clicked.connect(self.playground)
         self.noright.clicked.connect(self.clik_error)
         self.noright_2.clicked.connect(self.clik_error)
-
         self.table.clicked.connect(self.clik_error)
-    def clik_error(self):
-        error_play.show()
-        musics.thread_error()
-      
-    def second_tip(self):
+       
+
+    def desative(self):
         self.out.setHidden(True)
         self.keys_win.setHidden(True)
-        self.computer.setHidden(True)
-        self.first_dic.setHidden(True)
+        self.computer.setHidden(False)
         self.mirror_tip.setHidden(True)
         self.lastpag.setHidden(True)
         self.out.setHidden(True)
+        self.book.setHidden(True)
+    
+    def start_dic(self):
+        self.first_dic.setText("  Bem-vindo ao jogo! Scape room. A primeira dica é: o que na sala tem a ver com Alan Turing? guarde essa letra: H")
+     
+
+    def clik_error(self):
+        error_play.show()
+        window.close()
+        musics.thread_error()
+      
+    def second_tip(self):
+        self.first_dic.clear()
+        self.computer.setHidden(True)
+        self.book.setHidden(False)
         window.close()
         second.show()
         musics.thread_computer()
@@ -65,22 +72,22 @@ class First(Ui_MainWindow):
         
     def fourth_tip(self):
         self.mirror_tip.setHidden(True)
+        self.lastpag.setHidden(False)
         book_screen.close()
         window.close()
         mirror_screen.show()
 
     def last_tip(self):
-        self.lastpag.setHidden(True)
+     
         musics.thread_idea()
         mirror_screen.close()
         window.close()
-        self.keys_win.setHidden(True)
-        self.lastpag.setHidden(False)
+        self.lastpag.setHidden(True)
+        self.keys_win.setHidden(False)
         penultimate_screen.show()
         
     def key(self):
         self.keys_win.setHidden(True)
-
         penultimate_screen.close()
         self.out.setHidden(False)
         window.close()
