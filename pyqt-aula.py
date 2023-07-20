@@ -12,7 +12,6 @@ from penultimateScreen import Ui_verification
 from final import Ui_outhome
 from maçaneta import Ui_key
 from error import Ui_erro
-from table_tip import Ui_table_tip
 from play_error import Ui_play_error
 from threading import *
 import pygame

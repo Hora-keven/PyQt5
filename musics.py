@@ -56,7 +56,6 @@ def music_playground():
     pygame.init()
     pygame.mixer.music.load('musicas/criancas2.mp3')
     pygame.mixer.music.play()
-    time.sleep(5)
     pygame.mixer.music.stop()
     
 def thread_playground():
